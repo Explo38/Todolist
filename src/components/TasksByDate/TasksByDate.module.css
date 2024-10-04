@@ -1,0 +1,59 @@
+.tasksByDate {
+  margin: 20px 0;
+  color: #000;
+}
+
+.sectionTitle {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.datePicker {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  border: 2px solid #ccc;
+}
+
+/* Style pour indiquer les jours avec des tâches */
+.dayWithTasks {
+  position: relative;
+  background-color: #e0f7fa;
+  color: #000;
+}
+
+.dayWithTasks::after {
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 8px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+/* Style pour la case sélectionnée avec ou sans tâche */
+.react-datepicker__day--selected,
+.react-datepicker__day--selected.dayWithTasks {
+  background-color: #007bff !important; 
+  color: white !important;
+  border-radius: 50%;
+  position: relative;
+}
+
+/* Conserver l'indicateur de tâche même sur le jour sélectionné */
+.react-datepicker__day--selected.dayWithTasks::after {
+  background-color: red;
+  border-radius: 50%;
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 8px;
+}

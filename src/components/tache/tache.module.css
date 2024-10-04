@@ -1,0 +1,159 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #d3d3d3;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+h3 {
+  font-size: 18px;
+  margin: 20px 0;
+  color: #333;
+}
+
+.input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.datePicker {
+  display: inline-block;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.todoList, .completedList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todoItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.todoItem span {
+  flex-grow: 1;
+  text-align: left;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.checkbox {
+  margin-right: 10px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.deleteButton, .editButton {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 1.5em;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.editButton {
+  color: #007bff;
+}
+
+.editButton:hover {
+  color: #0056b3;
+}
+
+.deleteButton:hover {
+  color: darkred;
+}
+
+.saveButton {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.saveButton:hover {
+  background-color: #218838;
+}
+
+.todoItem.editing {
+  background-color: #f0f8ff;
+}
+
+.todoListContainer {
+  max-height: 500px; /* Fixe la hauteur maximale de la liste des tâches */
+  overflow-y: auto;  /* Ajoute un défilement vertical */
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.completedListContainer {
+  max-height: 300px; /* Fixe la hauteur maximale de la liste des tâches terminées */
+  overflow-y: auto;  /* Ajoute un défilement vertical */
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

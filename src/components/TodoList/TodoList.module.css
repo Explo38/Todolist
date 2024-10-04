@@ -1,0 +1,78 @@
+.todoList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todoItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  background-color: #fafafa;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.todoItem.completed {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.checkbox {
+  margin-right: 10px;
+}
+
+.todoItem span {
+  flex-grow: 1;
+}
+
+.editButton,
+.deleteButton {
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.editButton {
+  color: #007bff;
+}
+
+.editButton:hover {
+  color: #0056b3;
+}
+
+.deleteButton {
+  color: #e74c3c;
+}
+
+.deleteButton:hover {
+  color: #c0392b;
+}
+
+.saveButton {
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  color: green;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.saveButton:hover {
+  color: darkgreen;
+}
+
+.editInput {
+  flex-grow: 1;
+  padding: 8px;
+  font-size: 1em;
+  margin-right: 10px;
+}
+
+.datePicker {
+  margin-right: 10px;
+}
