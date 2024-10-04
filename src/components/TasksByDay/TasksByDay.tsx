@@ -8,7 +8,7 @@ interface TasksByDayProps {
   todos: Todo[];
   toggleCompletion: (id: number) => void;
   deleteTodo: (id: number) => void;
-  updateTodo: (updatedTodo: Todo) => void; // Ajout de updateTodo
+  updateTodo: (updatedTodo: Todo) => void; 
 }
 
 const TasksByDay: React.FC<TasksByDayProps> = ({ todos, toggleCompletion, deleteTodo, updateTodo }) => {

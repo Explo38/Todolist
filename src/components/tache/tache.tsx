@@ -58,7 +58,7 @@ const Tache: React.FC = () => {
     setTodos(todos.filter(todo => todo.id !== id));
   };
 
-  const tasksForToday = useMemo(() => {
+  const tasksForToday = useMemo(() => { // Utilisation de la fonction useMemo
     const today = new Date();
     return todos.filter(todo => todo.date.toDateString() === today.toDateString());
   }, [todos]);
@@ -102,7 +102,7 @@ const Tache: React.FC = () => {
             todos={tasksForToday}
             toggleCompletion={toggleCompletion}
             deleteTodo={deleteTodo}
-            updateTodo={updateTodo} // Ajout de la fonction updateTodo
+            updateTodo={updateTodo} 
           />
         </div>
       )}
@@ -112,7 +112,7 @@ const Tache: React.FC = () => {
             todos={tasksByDate}
             toggleCompletion={toggleCompletion}
             deleteTodo={deleteTodo}
-            updateTodo={updateTodo} // Ajout de la fonction updateTodo
+            updateTodo={updateTodo} 
           />
         </div>
       )}
@@ -122,7 +122,7 @@ const Tache: React.FC = () => {
             todos={allTasks}
             toggleCompletion={toggleCompletion}
             deleteTodo={deleteTodo}
-            updateTodo={updateTodo} // Ajout de la fonction updateTodo
+            updateTodo={updateTodo} 
           />
         </div>
       )}

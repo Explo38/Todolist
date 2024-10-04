@@ -7,7 +7,7 @@ interface AllTasksProps {
   todos: Todo[];
   toggleCompletion: (id: number) => void;
   deleteTodo: (id: number) => void;
-  updateTodo: (updatedTodo: Todo) => void; // Ajout de updateTodo
+  updateTodo: (updatedTodo: Todo) => void; 
 }
 
 const AllTasks: React.FC<AllTasksProps> = ({ todos, toggleCompletion, deleteTodo, updateTodo }) => {

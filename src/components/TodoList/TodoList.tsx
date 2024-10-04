@@ -16,7 +16,7 @@ interface TodoListProps {
   todos: Todo[];
   toggleCompletion: (id: number) => void;
   deleteTodo: (id: number) => void;
-  updateTodo: (updatedTodo: Todo) => void; // Ajout de updateTodo
+  updateTodo: (updatedTodo: Todo) => void; 
 }
 
 const TodoList: React.FC<TodoListProps> = ({ todos, toggleCompletion, deleteTodo, updateTodo }) => {

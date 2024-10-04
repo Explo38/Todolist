@@ -37,7 +37,7 @@ const TasksByDate: React.FC<TasksByDateProps> = ({ todos, toggleCompletion, dele
         onChange={(date: Date | null) => setFilterDate(date)}
         placeholderText="Sélectionner une date"
         className={styles.datePicker}
-        dayClassName={getDayClassName} // Applique la classe aux jours avec tâches
+        dayClassName={getDayClassName} 
       />
 
       <h3 className={styles.sectionTitle}>
